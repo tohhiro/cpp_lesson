@@ -13,6 +13,11 @@ services:
     stdin_open: true
     tty: true
     working_dir: /cppdev/src/build
+## https://qiita.com/yuzutarogo/items/8898377739b5c674743f
+
+## docker desktopを起動
+## docker compose up -d　などでコンテナが起動していること
+
 ## docker container exec -it cppdev /bin/sh
 # cd /
 # ls -la

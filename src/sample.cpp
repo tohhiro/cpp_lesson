@@ -5,12 +5,14 @@ int convertToInt();
 int compoundAssignment();
 int incrementDecrement();
 int inputKey();
+int condition();
 
 int main() {
     // convertToInt();
     // compoundAssignment();
     // incrementDecrement();
-    inputKey();
+    // inputKey();
+    condition();
     return 0;
 }
 
@@ -42,5 +44,22 @@ int inputKey() {
     cout << "2つの数値を入力してください" << "\n";
     cin >> x >> y;
     cout << "足した数値は" << x + y << "です" << "\n";
+    return 0;
+}
+
+int condition() {
+    int x;
+    cout << "年齢を入力してください" << "\n";
+    cin >> x;
+
+    if (x <g= 3)
+        cout << "0円" << "\n";
+    
+    else if (x >3 && x < 20 )
+        cout << "1000円" << "\n";
+
+    else
+        cout << "2000円" << "\n";
+
     return 0;
 }

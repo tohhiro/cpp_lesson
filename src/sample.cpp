@@ -6,13 +6,15 @@ int compoundAssignment();
 int incrementDecrement();
 int inputKey();
 int condition();
+int conditionSwitch();
 
 int main() {
     // convertToInt();
     // compoundAssignment();
     // incrementDecrement();
     // inputKey();
-    condition();
+    // condition();
+    conditionSwitch();
     return 0;
 }
 
@@ -52,7 +54,7 @@ int condition() {
     cout << "年齢を入力してください" << "\n";
     cin >> x;
 
-    if (x <g= 3)
+    if (x <= 3)
         cout << "0円" << "\n";
     
     else if (x >3 && x < 20 )
@@ -62,4 +64,28 @@ int condition() {
         cout << "2000円" << "\n";
 
     return 0;
+}
+
+int conditionSwitch() {
+
+    int num; 
+    cout << "数値を入力してください" << "\n";
+    cin >> num;
+
+    switch(num){
+        case 1:
+            cout << "ハリー" << "\n";
+            break;
+        case 2:
+            cout << "ロン" << "\n";
+            break;
+        case 3:
+            cout << "ハーマイオニー" << "\n";
+            break;
+        default:
+            cout << "マルフォイ" << "\n";
+            break;
+    }
+    return 0;
+
 }

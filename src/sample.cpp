@@ -7,6 +7,7 @@ int incrementDecrement();
 int inputKey();
 int condition();
 int conditionSwitch();
+int forFunction();
 
 int main() {
     // convertToInt();
@@ -14,7 +15,16 @@ int main() {
     // incrementDecrement();
     // inputKey();
     // condition();
-    conditionSwitch();
+    //conditionSwitch();
+    forFunction();
+    return 0;
+}
+
+int forFunction(){
+    int i;
+    for(i = 0; i < 5; i++){
+        cout << "メッセージ" << i +  1 << "回目\n";
+    }
     return 0;
 }
 

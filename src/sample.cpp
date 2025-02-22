@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int convertToInt();
@@ -8,6 +9,7 @@ int inputKey();
 int condition();
 int conditionSwitch();
 int forFunction();
+int forDoubleFunction();
 
 int main() {
     // convertToInt();
@@ -15,8 +17,23 @@ int main() {
     // incrementDecrement();
     // inputKey();
     // condition();
-    //conditionSwitch();
-    forFunction();
+    // conditionSwitch();
+    // forFunction();
+    forDoubleFunction();
+    return 0;
+}
+
+int forDoubleFunction(){
+    int i;
+    int j;
+    int numberOfTImes = 9;
+    for(i = 0; i < numberOfTImes; i++ ){
+        cout << i + 1 << "の段:";
+        for(j = 0; j < numberOfTImes; j++){
+            cout << setw(1) << i + 1 <<  " ✖️ " << j + 1 << " = " <<(i+1)*(j+1)<< " | ";
+        }
+        cout << "\n";
+    }
     return 0;
 }
 

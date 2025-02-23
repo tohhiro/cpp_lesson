@@ -10,6 +10,8 @@ int condition();
 int conditionSwitch();
 int forFunction();
 int forDoubleFunction();
+int whileFunction();
+int doWhileFunction();
 
 int main() {
     // convertToInt();
@@ -19,8 +21,33 @@ int main() {
     // condition();
     // conditionSwitch();
     // forFunction();
-    forDoubleFunction();
+    // forDoubleFunction();
+    // whileFunction();
+    doWhileFunction();
     return 0;
+}
+
+int doWhileFunction() {
+    int num = 10;
+    do {
+        cout << "メッセージ" <<  "\n";
+    }while (num < 5);
+    
+    return 0;
+}
+
+int whileFunction() {
+    int num = 1;
+    int count = 0;
+    while(num < 1000){
+        num *= 2;
+        count++;
+        cout << count << "回目" << num << "\n";
+    }
+    cout << count << "回目で1000を超えます" << "\n";
+
+    return 0;
+
 }
 
 int forDoubleFunction(){

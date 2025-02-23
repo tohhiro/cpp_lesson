@@ -11,6 +11,7 @@ int conditionSwitch();
 int forFunction();
 int forDoubleFunction();
 int whileFunction();
+int doWhileFunction();
 
 int main() {
     // convertToInt();
@@ -21,7 +22,17 @@ int main() {
     // conditionSwitch();
     // forFunction();
     // forDoubleFunction();
-    whileFunction();
+    // whileFunction();
+    doWhileFunction();
+    return 0;
+}
+
+int doWhileFunction() {
+    int num = 10;
+    do {
+        cout << "メッセージ" <<  "\n";
+    }while (num < 5);
+    
     return 0;
 }
 

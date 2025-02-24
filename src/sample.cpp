@@ -12,6 +12,8 @@ void forFunction();
 void forDoubleFunction();
 void whileFunction();
 void doWhileFunction();
+void twiceMessage();
+void twiceFunction(int num1, int num2);
 
 int main() {
     // convertToInt();
@@ -23,8 +25,23 @@ int main() {
     // forFunction();
     // forDoubleFunction();
     // whileFunction();
-    doWhileFunction();
+    // doWhileFunction();
+  
+    twiceMessage();
     return 0;
+}
+
+void twiceMessage(){
+    int num1, num2;
+    cout << "1つめの数値を入力してください" << "\n";
+    cin >> num1;
+    cout << "2つめの数値を入力してください" << "\n";
+    cin >> num2;
+    twiceFunction(num1, num2);
+}
+
+void twiceFunction(int num1, int num2) {
+    cout << (num1  + num2) * 2 << "\n";
 }
 
 void doWhileFunction() {

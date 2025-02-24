@@ -34,10 +34,10 @@ int main() {
 }
 
 void arrayFunction(){
-    int ary[3] = {1, 2, 3};
-    cout << ary[0] << "\n";
-    cout << ary[1] << "\n";
-    cout << ary[2] << "\n";
+    int ary[] = {100, 200, 300};
+    for (int i = 0; i < 3; i++){
+        cout << ary[i] << "\n";
+    }
 }
 
 void twiceMessage(){

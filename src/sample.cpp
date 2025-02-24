@@ -15,6 +15,8 @@ void doWhileFunction();
 void twiceMessage();
 void twiceFunction(int num1, int num2);
 void arrayFunction();
+void externalArgsArrayFunc();
+void averageFunc();
 
 int main() {
     // convertToInt();
@@ -28,9 +30,40 @@ int main() {
     // whileFunction();
     // doWhileFunction();
     // twiceMessage();
-
-    arrayFunction();
+    // arrayFunction();
+    // externalArgsArrayFunc();
+    averageFunc();
     return 0;
+}
+
+int averageCalc(int ary[], int size) {
+    int sum = 0;
+    for(int i=0; i<size; i++){
+        sum += ary[i];
+    }
+    return sum / size;
+}
+
+void averageFunc() {
+    int ary[3] = { 12, 34, 56 };
+    int size = sizeof(ary) / sizeof(ary[0]);
+    int avg = averageCalc(ary, size);
+    cout << "平均値は" << avg << "\n";
+}
+
+void externalArgsArrayFunc() {
+    int ary[5];
+    int limit = 5;
+    for(int i=0; i<limit; i++){
+        cout << i << "番目の数値を入力してください" << "\n";
+        cin >> ary[i];
+    }
+
+    cout << "入力された数値は" << "\n";
+    for(int i=0; i<limit; i++){
+        cout << ary[i] << "\n";
+    }
+
 }
 
 void arrayFunction(){

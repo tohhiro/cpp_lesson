@@ -14,6 +14,7 @@ void whileFunction();
 void doWhileFunction();
 void twiceMessage();
 void twiceFunction(int num1, int num2);
+void arrayFunction();
 
 int main() {
     // convertToInt();
@@ -26,9 +27,17 @@ int main() {
     // forDoubleFunction();
     // whileFunction();
     // doWhileFunction();
-  
-    twiceMessage();
+    // twiceMessage();
+
+    arrayFunction();
     return 0;
+}
+
+void arrayFunction(){
+    int ary[] = {100, 200, 300};
+    for (int i = 0; i < 3; i++){
+        cout << ary[i] << "\n";
+    }
 }
 
 void twiceMessage(){

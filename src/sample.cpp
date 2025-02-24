@@ -15,6 +15,7 @@ void doWhileFunction();
 void twiceMessage();
 void twiceFunction(int num1, int num2);
 void arrayFunction();
+void externalArgsArrayFunc();
 
 int main() {
     // convertToInt();
@@ -28,9 +29,24 @@ int main() {
     // whileFunction();
     // doWhileFunction();
     // twiceMessage();
-
-    arrayFunction();
+    // arrayFunction();
+    externalArgsArrayFunc();
     return 0;
+}
+
+void externalArgsArrayFunc() {
+    int ary[5];
+    int limit = 5;
+    for(int i=0; i<limit; i++){
+        cout << i << "番目の数値を入力してください" << "\n";
+        cin >> ary[i];
+    }
+
+    cout << "入力された数値は" << "\n";
+    for(int i=0; i<limit; i++){
+        cout << ary[i] << "\n";
+    }
+
 }
 
 void arrayFunction(){

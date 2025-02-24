@@ -2,16 +2,16 @@
 #include <iomanip>
 using namespace std;
 
-int convertToInt();
-int compoundAssignment();
-int incrementDecrement();
-int inputKey();
-int condition();
-int conditionSwitch();
-int forFunction();
-int forDoubleFunction();
-int whileFunction();
-int doWhileFunction();
+void convertToInt();
+void compoundAssignment();
+void incrementDecrement();
+void inputKey();
+void condition();
+void conditionSwitch();
+void forFunction();
+void forDoubleFunction();
+void whileFunction();
+void doWhileFunction();
 
 int main() {
     // convertToInt();
@@ -27,16 +27,15 @@ int main() {
     return 0;
 }
 
-int doWhileFunction() {
+void doWhileFunction() {
     int num = 10;
     do {
         cout << "メッセージ" <<  "\n";
     }while (num < 5);
     
-    return 0;
 }
 
-int whileFunction() {
+void whileFunction() {
     int num = 1;
     int count = 0;
     while(num < 1000){
@@ -46,11 +45,9 @@ int whileFunction() {
     }
     cout << count << "回目で1000を超えます" << "\n";
 
-    return 0;
-
 }
 
-int forDoubleFunction(){
+void forDoubleFunction(){
     int i;
     int j;
     int numberOfTImes = 9;
@@ -61,49 +58,43 @@ int forDoubleFunction(){
         }
         cout << "\n";
     }
-    return 0;
 }
 
-int forFunction(){
+void forFunction(){
     int i;
     for(i = 0; i < 5; i++){
         cout << "メッセージ" << i +  1 << "回目\n";
     }
-    return 0;
 }
 
-int convertToInt(){
+void convertToInt(){
     const double pi = 3.14;
     cout << (int)pi << endl;
-    return 0;
 }
 
-int compoundAssignment(){
+void compoundAssignment(){
     int val = 10;
     val += 1;
     cout << val << endl;
-    return 0;
 }
 
-int incrementDecrement() {
+void incrementDecrement() {
     int x = 10;
     int y = 10;
     x++;
     y--;
     cout << "x: " << x << "\n";
     cout << "y: " << y << "\n";
-    return 0;
 }
 
-int inputKey() {
+void inputKey() {
     int x,y;
     cout << "2つの数値を入力してください" << "\n";
     cin >> x >> y;
     cout << "足した数値は" << x + y << "です" << "\n";
-    return 0;
 }
 
-int condition() {
+void condition() {
     int x;
     cout << "年齢を入力してください" << "\n";
     cin >> x;
@@ -117,10 +108,9 @@ int condition() {
     else
         cout << "2000円" << "\n";
 
-    return 0;
 }
 
-int conditionSwitch() {
+void conditionSwitch() {
 
     int num; 
     cout << "数値を入力してください" << "\n";
@@ -140,6 +130,5 @@ int conditionSwitch() {
             cout << "マルフォイ" << "\n";
             break;
     }
-    return 0;
 
 }

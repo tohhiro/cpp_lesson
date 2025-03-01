@@ -31,7 +31,7 @@ int main() {
     // doWhileFunction();
     // twiceMessage();
     // arrayFunction();
-    // externalArgsArrayFunc();
+    externalArgsArrayFunc();
     averageFunc();
     return 0;
 }

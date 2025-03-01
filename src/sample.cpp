@@ -30,7 +30,7 @@ int main() {
     // whileFunction();
     // doWhileFunction();
     // twiceMessage();
-    // arrayFunction();
+    arrayFunction();
     externalArgsArrayFunc();
     averageFunc();
     return 0;

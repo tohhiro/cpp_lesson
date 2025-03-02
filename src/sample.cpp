@@ -22,6 +22,7 @@ void swapMainFunc();
 void swapFunc(int *x);
 void multipleSwapFunc(int x, int y, int *increaseResult, int *decreaseResult);
 void multipleSwapMainFunc();
+void structFunc();
 
 int main() {
     // convertToInt();
@@ -40,9 +41,33 @@ int main() {
     // averageFunc();
     // pointerFunc();
     //  swapMainFunc();
-    multipleSwapMainFunc();
+    // multipleSwapMainFunc();
+    structFunc();
     return 0;
 }
+
+void structFunc() {
+    struct Fruits {
+        char name[128];
+        int price;
+        int stock;
+    };
+
+    struct Fruits store = {"apple", 100, 10};
+    struct Fruits *pStore = &store;
+
+    // NOTE: 値もアドレスも表示される結果は同じ
+    cout << "値より" << "\n";
+    cout << "商品名は" << store.name << "\n";
+    cout << "値段は" << store.price << "\n";
+    cout << "在庫数は" << store.stock << "\n";
+
+    cout << "アドレス（ポインタ）より" << "\n";
+    cout << "商品名は" << pStore->name << "\n";
+    cout << "値段は" << pStore->price << "\n";
+    cout << "在庫数は" << pStore->stock << "\n";
+}
+
 
 void multipleSwapMainFunc(){
     int num1 = 40;

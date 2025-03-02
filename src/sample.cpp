@@ -18,6 +18,8 @@ void arrayFunction();
 void externalArgsArrayFunc();
 void averageFunc();
 void pointerFunc();
+void swapMainFunc();
+void swapFunc(int *x);
 
 int main() {
     // convertToInt();
@@ -34,8 +36,21 @@ int main() {
     // arrayFunction();
     // externalArgsArrayFunc();
     // averageFunc();
-    pointerFunc();
+    // pointerFunc();
+    swapMainFunc();
     return 0;
+}
+
+void swapMainFunc() {
+    int apple = 10;
+    cout << "appleの値は" << apple << "\n";
+
+    swapFunc(&apple); // 参照渡しして、appleの値を変更する
+    cout << "appleの値が代わり" << apple << "なった\n";
+}
+
+void swapFunc(int *x) {
+    *x = 20;
 }
 
 void pointerFunc() {

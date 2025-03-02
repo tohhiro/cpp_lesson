@@ -20,6 +20,8 @@ void averageFunc();
 void pointerFunc();
 void swapMainFunc();
 void swapFunc(int *x);
+void multipleSwapFunc(int x, int y, int *increaseResult, int *decreaseResult);
+void multipleSwapMainFunc();
 
 int main() {
     // convertToInt();
@@ -37,8 +39,24 @@ int main() {
     // externalArgsArrayFunc();
     // averageFunc();
     // pointerFunc();
-    swapMainFunc();
+    //  swapMainFunc();
+    multipleSwapMainFunc();
     return 0;
+}
+
+void multipleSwapMainFunc(){
+    int num1 = 40;
+    int num2 = 10;
+    int increaseResult = 0;
+    int decreaseResult = 0;
+    multipleSwapFunc(num1, num2, &increaseResult, &decreaseResult);
+    cout << "足し算の結果は" << increaseResult << "\n";
+    cout << "引き算の結果は" << decreaseResult << "\n";
+}
+
+void multipleSwapFunc(int x, int y, int *increaseResult, int *decreaseResult) {
+    *increaseResult = x + y;
+    *decreaseResult = x - y;
 }
 
 void swapMainFunc() {

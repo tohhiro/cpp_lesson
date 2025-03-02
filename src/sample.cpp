@@ -17,6 +17,7 @@ void twiceFunction(int num1, int num2);
 void arrayFunction();
 void externalArgsArrayFunc();
 void averageFunc();
+void pointerFunc();
 
 int main() {
     // convertToInt();
@@ -32,8 +33,17 @@ int main() {
     // twiceMessage();
     // arrayFunction();
     // externalArgsArrayFunc();
-    averageFunc();
+    // averageFunc();
+    pointerFunc();
     return 0;
+}
+
+void pointerFunc() {
+    int num = 10;
+    int *pNum = &num;
+    cout << "pNumに代入されたアドレスは" << pNum << "\n";
+    cout << "numのアドレスは" << &num << "\n";
+    cout << "numの値をpNumから表示すると" << *pNum << "\n";
 }
 
 int averageCalc(int ary[], int size) {

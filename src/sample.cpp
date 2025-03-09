@@ -26,6 +26,7 @@ void structFunc();
 void userStructFunc();
 void userStructFunc2();
 void userStructFunc3();
+void userStructFunc4();
 
 int main() {
     // convertToInt();
@@ -48,9 +49,27 @@ int main() {
     // structFunc();
     // userStructFunc();
     // userStructFunc2();
-    userStructFunc3();
+    // userStructFunc3();
+    userStructFunc4();
 
     return 0;
+}
+
+void userStructFunc4() {
+    struct {
+        int year;
+        char name[64];
+        double weight;
+        double height;
+    } Taro, Hanako;
+
+    Taro.year = 3;
+    Hanako.year = 2;
+
+    cout << "Taroの情報" << "\n";
+    cout << "学年は" << Taro.year << "です" << "\n";
+    cout << "Hanakoの情報" << "\n";
+    cout << "学年は" << Hanako.year << "です" << "\n";
 }
 
 void userStructFunc3() {

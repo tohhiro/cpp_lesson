@@ -2,8 +2,6 @@
 {
   "version": "0.2",
   "language": "en,lorem",
-  "words": [
-    // ここに単語を追加
-  ],
+  "words": ["hanako"],
   "flagWords": []
 }

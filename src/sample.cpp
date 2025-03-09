@@ -57,12 +57,22 @@ void userStructFunc2() {
         char name[64];
         double weight;
         double height;
-    } Taro = {3, "Taro", 70.5, 180.5};
+    };
 
+    Student Taro = {3, "Taro", 70.5, 180.5};
+    Student Hanako = {2, "Hanako", 50.5, 160.5};
+
+    cout << "Taroの情報" << "\n";
     cout << "学年は" << Taro.year << "です" << "\n";
     cout << "名前は" << Taro.name << "です" << "\n";
     cout << "体重は" << Taro.weight << "です" << "\n";
     cout << "身長は" << Taro.height << "です" << "\n";
+    cout << "------" << "\n";
+    cout << "Hanakoの情報" << "\n";
+    cout << "学年は" << Hanako.year << "です" << "\n";
+    cout << "名前は" << Hanako.name << "です" << "\n";
+    cout << "体重は" << Hanako.weight << "です" << "\n";
+    cout << "身長は" << Hanako.height << "です" << "\n";
 }
 
 void userStructFunc () {

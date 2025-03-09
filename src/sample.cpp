@@ -24,7 +24,7 @@ void multipleSwapFunc(int x, int y, int *increaseResult, int *decreaseResult);
 void multipleSwapMainFunc();
 void structFunc();
 void userStructFunc();
-void userStructMainFunc();
+void userStructFunc2();
 
 int main() {
     // convertToInt();
@@ -45,8 +45,24 @@ int main() {
     //  swapMainFunc();
     // multipleSwapMainFunc();
     // structFunc();
-    userStructFunc();
+    // userStructFunc();
+    userStructFunc2();
+
     return 0;
+}
+
+void userStructFunc2() {
+    struct Student {
+        int year;
+        char name[64];
+        double weight;
+        double height;
+    } Taro = {3, "Taro", 70.5, 180.5};
+
+    cout << "学年は" << Taro.year << "です" << "\n";
+    cout << "名前は" << Taro.name << "です" << "\n";
+    cout << "体重は" << Taro.weight << "です" << "\n";
+    cout << "身長は" << Taro.height << "です" << "\n";
 }
 
 void userStructFunc () {

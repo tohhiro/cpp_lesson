@@ -24,7 +24,9 @@ void multipleSwapFunc(int x, int y, int *increaseResult, int *decreaseResult);
 void multipleSwapMainFunc();
 void structFunc();
 void userStructFunc();
-void userStructMainFunc();
+void userStructFunc2();
+void userStructFunc3();
+void userStructFunc4();
 
 int main() {
     // convertToInt();
@@ -45,8 +47,76 @@ int main() {
     //  swapMainFunc();
     // multipleSwapMainFunc();
     // structFunc();
-    userStructFunc();
+    // userStructFunc();
+    // userStructFunc2();
+    // userStructFunc3();
+    userStructFunc4();
+
     return 0;
+}
+
+void userStructFunc4() {
+    struct {
+        int year;
+        char name[64];
+        double weight;
+        double height;
+    } Taro, Hanako;
+
+    Taro.year = 3;
+    Hanako.year = 2;
+
+    cout << "Taroの情報" << "\n";
+    cout << "学年は" << Taro.year << "です" << "\n";
+    cout << "Hanakoの情報" << "\n";
+    cout << "学年は" << Hanako.year << "です" << "\n";
+}
+
+void userStructFunc3() {
+    struct Student {
+        int year;
+        char name[64];
+        double weight;
+        double height;
+    };
+
+    Student students[2] = {
+        {3, "Taro", 70.5, 180.5},
+        {2, "Hanako", 50.5, 160.5},
+    };
+
+    for(int i=0; i<2; i++){
+        cout << students[i].name << "の情報" << "\n";
+        cout << "学年は" << students[i].year << "です" << "\n";
+        cout << "名前は" << students[i].name << "です" << "\n";
+        cout << "体重は" << students[i].weight << "です" << "\n";
+        cout << "身長は" << students[i].height << "です" << "\n";
+        cout << "------" << "\n";
+    }
+}
+
+void userStructFunc2() {
+    struct Student {
+        int year;
+        char name[64];
+        double weight;
+        double height;
+    };
+
+    Student Taro = {3, "Taro", 70.5, 180.5};
+    Student Hanako = {2, "Hanako", 50.5, 160.5};
+
+    cout << "Taroの情報" << "\n";
+    cout << "学年は" << Taro.year << "です" << "\n";
+    cout << "名前は" << Taro.name << "です" << "\n";
+    cout << "体重は" << Taro.weight << "です" << "\n";
+    cout << "身長は" << Taro.height << "です" << "\n";
+    cout << "------" << "\n";
+    cout << "Hanakoの情報" << "\n";
+    cout << "学年は" << Hanako.year << "です" << "\n";
+    cout << "名前は" << Hanako.name << "です" << "\n";
+    cout << "体重は" << Hanako.weight << "です" << "\n";
+    cout << "身長は" << Hanako.height << "です" << "\n";
 }
 
 void userStructFunc () {

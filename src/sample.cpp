@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
 void convertToInt();
@@ -27,6 +28,7 @@ void userStructFunc();
 void userStructFunc2();
 void userStructFunc3();
 void userStructFunc4();
+void bubbleSortFunc();
 
 int main() {
     // convertToInt();
@@ -50,9 +52,27 @@ int main() {
     // userStructFunc();
     // userStructFunc2();
     // userStructFunc3();
-    userStructFunc4();
+    // userStructFunc4();
+    bubbleSortFunc();
 
     return 0;
+}
+
+void bubbleSortFunc() {
+    int ary[] = { 4, 8, 10, 1, 6, 3, 5, 9, 2, 7};
+    int size = sizeof(ary) / sizeof(ary[0]);
+
+    for(int i=0; i<size-1; i++ ){
+        for(int j=0; j<size-1-i; j++){
+            if(ary[j] > ary[j+1]){
+                swap(ary[j], ary[j+1]);
+            }
+        }
+    }
+
+    for(int i=0; i<size; i++){
+        cout << ary[i] << "\n";
+    }
 }
 
 void userStructFunc4() {

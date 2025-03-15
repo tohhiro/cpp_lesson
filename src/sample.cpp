@@ -3,6 +3,12 @@
 #include <algorithm>
 using namespace std;
 
+struct Fruits {
+    int apple;
+    int orange;
+    int banana;
+};
+
 void convertToInt();
 void compoundAssignment();
 void incrementDecrement();
@@ -29,6 +35,10 @@ void userStructFunc2();
 void userStructFunc3();
 void userStructFunc4();
 void bubbleSortFunc();
+void structAssignment();
+Fruits structAssignment2();
+void structAssignment2Main(struct Fruits store1);
+
 
 int main() {
     // convertToInt();
@@ -53,9 +63,37 @@ int main() {
     // userStructFunc2();
     // userStructFunc3();
     // userStructFunc4();
-    bubbleSortFunc();
+    // bubbleSortFunc();
+    // structAssignment();
+    Fruits store = structAssignment2();
+    structAssignment2Main(store);
 
     return 0;
+}
+
+Fruits structAssignment2() {
+    struct Fruits store1 = {10, 20, 30};
+    return store1;
+};
+
+void structAssignment2Main(struct Fruits store1) {
+    cout << "store1のappleの値は" << store1.apple << "\n";
+    cout << "store1のorangeの値は" << store1.orange << "\n";
+    cout << "store1のbananaの値は" << store1.banana << "\n";
+}
+
+void structAssignment() {
+    struct Fruits {
+        int apple;
+        int orange;
+        int banana;
+    };
+
+    struct Fruits store1 = {10, 20, 30};
+
+    cout << "store1のappleの値は" << store1.apple << "\n";
+    cout << "store1のorangeの値は" << store1.orange << "\n";
+    cout << "store1のbananaの値は" << store1.banana << "\n";
 }
 
 void bubbleSortFunc() {

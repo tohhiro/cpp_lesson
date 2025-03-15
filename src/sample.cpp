@@ -38,6 +38,7 @@ void bubbleSortFunc();
 void structAssignment();
 Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
+void arrayStructFunc();
 
 
 int main() {
@@ -65,10 +66,34 @@ int main() {
     // userStructFunc4();
     // bubbleSortFunc();
     // structAssignment();
-    Fruits store = structAssignment2();
-    structAssignment2Main(store);
+    // Fruits store = structAssignment2();
+    // structAssignment2Main(store);
+    arrayStructFunc();
 
     return 0;
+}
+
+void arrayStructFunc() {
+    typedef struct {
+        char name[32];
+        int kokugo;
+        int sansu;
+        int rika;
+    }Fruits2;
+
+    Fruits2 students[3] = {
+        {"Taro", 100, 90, 80},
+        {"Hanako", 80, 70, 60},
+        {"Jiro", 60, 50, 40},
+    };
+
+    for(int i=0; i<3; i++){
+        cout << students[i].name << "の情報" << "\n";
+        cout << "国語の点数は" << students[i].kokugo << "です" << "\n";
+        cout << "算数の点数は" << students[i].sansu << "です" << "\n";
+        cout << "理科の点数は" << students[i].rika << "です" << "\n";
+        cout << "------" << "\n";
+    }
 }
 
 Fruits structAssignment2() {

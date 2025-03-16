@@ -9,6 +9,18 @@ struct Fruits {
     int banana;
 };
 
+class Student {
+    public:
+        int num;
+        int year;
+        void show();
+};
+
+void Student::show() {
+    cout << "番号" << num << "\n";
+    cout << "年齢" << year << "\n";
+}
+
 void convertToInt();
 void compoundAssignment();
 void incrementDecrement();
@@ -39,36 +51,14 @@ void structAssignment();
 Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
+void basicClass();
 
 
 int main() {
-    // convertToInt();
-    // compoundAssignment();
-    // incrementDecrement();
-    // inputKey();
-    // condition();
-    // conditionSwitch();
-    // forFunction();
-    // forDoubleFunction();
-    // whileFunction();
-    // doWhileFunction();
-    // twiceMessage();
-    // arrayFunction();
-    // externalArgsArrayFunc();
-    // averageFunc();
-    // pointerFunc();
-    //  swapMainFunc();
-    // multipleSwapMainFunc();
-    // structFunc();
-    // userStructFunc();
-    // userStructFunc2();
-    // userStructFunc3();
-    // userStructFunc4();
-    // bubbleSortFunc();
-    // structAssignment();
-    // Fruits store = structAssignment2();
-    // structAssignment2Main(store);
-    arrayStructFunc();
+ 
+    Student Taro = {100, 14};
+    cout << "Taroの情報" << "\n";
+    Taro.show();
 
     return 0;
 }

@@ -1,22 +1,12 @@
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
+#include "sample.h"
 using namespace std;
-
 struct Fruits {
     int apple;
     int orange;
     int banana;
-};
-
-class Student {
-    public:
-        int num;
-        int year;
-        void show(){
-            cout << "番号" << num << "\n";
-            cout << "年齢" << year << "\n";
-        };
 };
 
 
@@ -50,14 +40,18 @@ void structAssignment();
 Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
-void basicClass();
 
+void localShow(Student x) {
+    x.show();
+}
 
 int main() {
  
-    Student Taro = {101, 15};
-    cout << "Taroの情報" << "\n";
-    Taro.show();
+    Student Taro, *pTaro;
+    pTaro = &Taro;
+    pTaro->num = 30;
+    pTaro->year = 134;
+    localShow(Taro);
 
     return 0;
 }

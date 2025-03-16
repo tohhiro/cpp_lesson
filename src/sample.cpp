@@ -40,14 +40,16 @@ void structAssignment();
 Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
-void basicClass();
 
 
 int main() {
  
-    Student Taro = {103, 15};
-    cout << "Taroの情報" << "\n";
+    Student Taro, *pTaro;
+    pTaro = &Taro;
+    pTaro->num = 10;
+    pTaro->year = 14;
     Taro.show();
+
 
     return 0;
 }

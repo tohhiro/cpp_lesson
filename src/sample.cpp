@@ -13,13 +13,12 @@ class Student {
     public:
         int num;
         int year;
-        void show();
+        void show(){
+            cout << "番号" << num << "\n";
+            cout << "年齢" << year << "\n";
+        };
 };
 
-void Student::show() {
-    cout << "番号" << num << "\n";
-    cout << "年齢" << year << "\n";
-}
 
 void convertToInt();
 void compoundAssignment();
@@ -56,7 +55,7 @@ void basicClass();
 
 int main() {
  
-    Student Taro = {100, 14};
+    Student Taro = {101, 15};
     cout << "Taroの情報" << "\n";
     Taro.show();
 

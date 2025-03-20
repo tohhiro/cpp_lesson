@@ -10,3 +10,14 @@ class Student {
             cout << "年齢" << year << "\n";
         };
 };
+
+
+class Student2 {
+    private:
+        int num;
+    public:
+        void setNum(int x){
+            num = x;
+            cout << "番号" << num << "\n";
+        };
+};

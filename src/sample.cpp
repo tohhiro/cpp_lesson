@@ -47,11 +47,8 @@ void localShow(Student x) {
 
 int main() {
  
-    Student Taro, *pTaro;
-    pTaro = &Taro;
-    pTaro->num = 30;
-    pTaro->year = 134;
-    localShow(Taro);
+    Student2 Tanaka;
+    Tanaka.setNum(1010);
 
     return 0;
 }

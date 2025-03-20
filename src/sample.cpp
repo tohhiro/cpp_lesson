@@ -47,11 +47,10 @@ void localShow(Student x) {
 
 int main() {
  
-    Student Taro, *pTaro;
-    pTaro = &Taro;
-    pTaro->num = 30;
-    pTaro->year = 134;
-    localShow(Taro);
+    Student2 Tanaka;
+    Tanaka.setNum(120);
+    int result = Tanaka.getNum();
+    Tanaka.show(result);
 
     return 0;
 }

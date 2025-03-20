@@ -48,7 +48,7 @@ void localShow(Student x) {
 int main() {
  
     Student2 Tanaka;
-    Tanaka.setNum(666);
+    Tanaka.setNum(120);
     int result = Tanaka.getNum();
     Tanaka.show(result);
 

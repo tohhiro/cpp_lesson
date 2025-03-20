@@ -17,7 +17,10 @@ class Student2 {
         int num;
     public:
         void setNum(int x){
-            num = x;
+            if(x > 0 && x < 100)
+                num = x;
+            else
+                num = 0;
         };
         int getNum(){
             return num;

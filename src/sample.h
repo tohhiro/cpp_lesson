@@ -18,6 +18,11 @@ class Student2 {
     public:
         void setNum(int x){
             num = x;
-            cout << "番号" << num << "\n";
+        };
+        int getNum(){
+            return num;
+        };
+        void show(int x){
+            cout << "番号" << x << "\n";
         };
 };

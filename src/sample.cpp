@@ -45,11 +45,9 @@ void localShow(Student x) {
     x.show();
 }
 
-
-
 int main() {
  
-    Student3 Taro;
+    Student3 Taro(256);
     cout << "Taroの番号は" << Taro.num << "\n";
 
     return 0;

@@ -47,7 +47,9 @@ void localShow(Student x) {
 
 int main() {
  
+    Student3 Hanako;
     Student3 Taro(256);
+    cout << "Hanakoの番号は" << Hanako.num << "\n";
     cout << "Taroの番号は" << Taro.num << "\n";
 
     return 0;

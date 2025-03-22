@@ -33,9 +33,13 @@ class Student2 {
 class Student3 {
     public:
         int num;
+        Student3();
         Student3(int x);
 };
 
+Student3::Student3(){
+    num = 0;
+}
 Student3::Student3(int x){
     num = x;
 }

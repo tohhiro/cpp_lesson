@@ -35,6 +35,8 @@ class Student3 {
         int num;
         Student3();
         Student3(int x);
+        ~Student3();
+        Student3(const Student3 &obj);
 };
 
 Student3::Student3(){
@@ -43,3 +45,12 @@ Student3::Student3(){
 Student3::Student3(int x){
     num = x;
 }
+
+Student3::~Student3(){
+    cout << "デストラクタが呼ばれました" << "\n";
+}
+
+Student3::Student3(const Student3 &obj){
+    cout << "コピーコンストラクタが呼ばれました" << "\n";
+}
+

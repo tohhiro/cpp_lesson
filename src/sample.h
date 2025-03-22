@@ -11,6 +11,14 @@ class Student {
         };
 };
 
+class Teacher : public Student {
+    public:
+        int num2;
+        void show2(){
+            cout << "番号" << num2 << "\n";
+        }
+};
+
 
 class Student2 {
     private:

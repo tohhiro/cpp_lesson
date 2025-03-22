@@ -47,8 +47,12 @@ void localShow(Student x) {
 
 int main() {
  
-    Student3 Hanako;
-    Student3 Taro = Hanako;
+    Teacher Hanako;
+    Hanako.num = 10;
+    Hanako.year = 20;
+    Hanako.num2 = 30;
+    Hanako.show();
+    Hanako.show2();
 
     return 0;
 }

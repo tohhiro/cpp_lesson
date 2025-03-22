@@ -2,20 +2,18 @@
 using namespace std;
 
 class Student {
-    public:
+    protected:
         int num;
         int year;
-        void show(){
-            cout << "番号" << num << "\n";
-            cout << "年齢" << year << "\n";
-        };
 };
 
 class Teacher : public Student {
     public:
-        int num2;
-        void show2(){
-            cout << "番号" << num2 << "\n";
+        void show2(int n, int y){
+            num = n;
+            year = y;
+            cout << "番号" << num << "\n";
+            cout << "年齢" << year << "\n";
         }
 };
 

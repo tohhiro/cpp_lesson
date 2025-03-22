@@ -41,18 +41,10 @@ Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
 
-void localShow(Student x) {
-    x.show();
-}
-
 int main() {
  
     Teacher Hanako;
-    Hanako.num = 10;
-    Hanako.year = 20;
-    Hanako.num2 = 30;
-    Hanako.show();
-    Hanako.show2();
+    Hanako.show2(1, 2);
 
     return 0;
 }

@@ -45,12 +45,12 @@ void localShow(Student x) {
     x.show();
 }
 
+
+
 int main() {
  
-    Student2 Tanaka;
-    Tanaka.setNum(120);
-    int result = Tanaka.getNum();
-    Tanaka.show(result);
+    Student3 Taro;
+    cout << "Taroの番号は" << Taro.num << "\n";
 
     return 0;
 }

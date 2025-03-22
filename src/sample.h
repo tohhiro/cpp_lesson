@@ -29,3 +29,13 @@ class Student2 {
             cout << "番号" << x << "\n";
         };
 };
+
+class Student3 {
+    public:
+        int num;
+        Student3();
+};
+
+Student3::Student3(){
+    num = 111;
+}

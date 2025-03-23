@@ -86,7 +86,20 @@ NewClass::NewClass() : OldClass(100){
     cout << "新しいコンストラクタが呼ばれました" << "\n";
 }
 
-class Mother {
+class Human {
+    public:
+        Human();
+        int num;
+        void humanShow(){
+            cout << "Humanのnum: " << num << "\n";
+        }
+};
+
+Human::Human(){
+    num = 0;
+}
+
+class Mother : public virtual Human {
     public:
         int num1;
         Mother();
@@ -96,7 +109,7 @@ Mother::Mother(){
     num1 = 100;
 }
 
-class Father {
+class Father : public virtual Human {
     public:
         int num2;
         Father();
@@ -109,6 +122,7 @@ Father::Father(){
 class Child : public Mother, public Father {
     public:
         void show(){
+            cout << "num: " << num << "\n";
             cout << "num1: " << num1 << "\n";
             cout << "num2: " << num2 << "\n";
         }

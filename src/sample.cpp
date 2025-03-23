@@ -45,6 +45,7 @@ int main() {
  
     Child obj;
     obj.show();
+    obj.humanShow();
 
     return 0;
 }

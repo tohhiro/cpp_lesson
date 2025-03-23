@@ -85,3 +85,31 @@ class NewClass : public OldClass {
 NewClass::NewClass() : OldClass(100){
     cout << "新しいコンストラクタが呼ばれました" << "\n";
 }
+
+class Mother {
+    public:
+        int num1;
+        Mother();
+};
+
+Mother::Mother(){
+    num1 = 100;
+}
+
+class Father {
+    public:
+        int num2;
+        Father();
+};
+
+Father::Father(){
+    num2 = 200;
+}
+
+class Child : public Mother, public Father {
+    public:
+        void show(){
+            cout << "num1: " << num1 << "\n";
+            cout << "num2: " << num2 << "\n";
+        }
+};

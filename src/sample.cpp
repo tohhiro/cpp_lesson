@@ -41,14 +41,11 @@ Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
 
-void localShow(Student x) {
-    x.show();
-}
-
 int main() {
  
-    Student3 Hanako;
-    Student3 Taro = Hanako;
+    Child obj;
+    obj.show();
+    obj.humanShow();
 
     return 0;
 }

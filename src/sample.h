@@ -60,3 +60,25 @@ Student3::Student3(const Student3 &obj){
     cout << "コピーコンストラクタが呼ばれました" << "\n";
 }
 
+class OldClass {
+    public:
+        OldClass();
+        OldClass(int x);
+};
+
+OldClass::OldClass(){
+    cout << "古いコンストラクタが呼ばれました" << "\n";
+}
+
+OldClass::OldClass(int x){
+    cout << x << ": 引数を持つコンストラクタが呼ばれました" << "\n";
+}
+
+class NewClass : public OldClass {
+    public:
+        NewClass();
+};
+
+NewClass::NewClass() : OldClass(100){
+    cout << "新しいコンストラクタが呼ばれました" << "\n";
+}

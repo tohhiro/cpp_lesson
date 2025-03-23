@@ -43,8 +43,7 @@ void arrayStructFunc();
 
 int main() {
  
-    Teacher Hanako;
-    Hanako.show2(1, 2);
+    NewClass obj;
 
     return 0;
 }

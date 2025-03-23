@@ -2,11 +2,14 @@
 using namespace std;
 
 class Student {
+    public:
+        static int grade;
     protected:
         int num;
         int year;
 };
 
+int Student::grade = 3;
 class Teacher : public Student {
     public:
         void show2(int n, int y){

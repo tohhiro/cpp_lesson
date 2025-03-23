@@ -43,7 +43,13 @@ void arrayStructFunc();
 
 int main() {
  
-    NewClass obj;
+    Teacher sato;
+    Teacher imada;
+    Teacher hamada;
+
+    cout << "sato: " << sato.grade << "\n";
+    cout << "imada: " << imada.grade << "\n";
+    cout << "hamada: " << hamada.grade << "\n";
 
     return 0;
 }

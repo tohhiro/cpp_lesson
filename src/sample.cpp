@@ -40,14 +40,23 @@ void structAssignment();
 Fruits structAssignment2();
 void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
+void twiceFunc(int num1);
+void twiceFunc(double num1);
 
 int main() {
  
-    Child obj;
-    obj.show();
-    obj.humanShow();
+    twiceFunc(10);
+    twiceFunc(10.5);
 
     return 0;
+}
+
+void twiceFunc(int num1) {
+    cout << "整数の二倍の結果" << num1 * 2 << "\n";
+}
+
+void twiceFunc(double num1) {
+    cout << "少数の二倍の結果" << num1 * 2 << "\n";
 }
 
 void arrayStructFunc() {

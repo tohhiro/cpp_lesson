@@ -42,11 +42,14 @@ void structAssignment2Main(struct Fruits store1);
 void arrayStructFunc();
 void twiceFunc(int num1);
 void twiceFunc(double num1);
+void twiceFunc(const char* num1);
+
 
 int main() {
  
     twiceFunc(10);
     twiceFunc(10.5);
+    twiceFunc("123");
 
     return 0;
 }
@@ -57,6 +60,10 @@ void twiceFunc(int num1) {
 
 void twiceFunc(double num1) {
     cout << "少数の二倍の結果" << num1 * 2 << "\n";
+}
+
+void twiceFunc(const char* num1) {
+    cout << "文字列の引数はそのまま出す" << num1 << "\n";
 }
 
 void arrayStructFunc() {

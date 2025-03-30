@@ -127,3 +127,40 @@ class Child : public Mother, public Father {
             cout << "num2: " << num2 << "\n";
         }
 };
+
+class NewClass2 {
+    public:
+        void hello(){
+            cout << "Hello" << "\n";
+        }
+        void hello(string str){
+            cout << "Hello! " << str << "\n";
+        }
+        virtual void show() = 0; // 純粋仮想関数
+};
+
+class NewClass3 : public NewClass2 {
+    public:
+        void show(){
+            cout << "NewClass3のshow" << "\n";
+        }
+};
+
+class Student4 {
+    public:
+        int num;
+};
+
+class Tanaka : public Student4 {
+    public:
+        Tanaka(int x){
+            num = x;
+        }
+};
+
+class Sato : public Student4 {
+    public:
+        Sato(int x){
+            num = x;
+        }
+};

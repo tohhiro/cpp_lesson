@@ -47,9 +47,17 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    twiceFunc(10);
-    twiceFunc(10.5);
-    twiceFunc("123");
+    Tanaka tanaka(10);
+    Sato sato(20);
+    Student4 *pStudent[2];
+    pStudent[0] = &tanaka;
+    pStudent[1] = &sato;
+
+    int length = sizeof(pStudent) / sizeof(pStudent[0]);
+    for(int i=0; i<length; i++){
+        cout << pStudent[i]->num << "\n";
+    }
+
 
     return 0;
 }

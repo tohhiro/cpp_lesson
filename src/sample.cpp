@@ -47,9 +47,9 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    twiceFunc(10);
-    twiceFunc(10.5);
-    twiceFunc("123");
+    NewClass2 obj;
+    obj.hello();
+    obj.hello("tohhiro");
 
     return 0;
 }

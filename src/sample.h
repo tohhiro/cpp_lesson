@@ -127,3 +127,13 @@ class Child : public Mother, public Father {
             cout << "num2: " << num2 << "\n";
         }
 };
+
+class NewClass2 {
+    public:
+        void hello(){
+            cout << "Hello" << "\n";
+        };
+        void hello(string str){
+            cout << "Hello! " << str << "\n";
+        };
+};

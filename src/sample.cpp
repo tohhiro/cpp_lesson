@@ -47,11 +47,17 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    NewClass2 obj;
-    obj.show();
-    NewClass3 obj2;
-    obj2.show();
-    obj2.NewClass2::show();
+    Tanaka tanaka(10);
+    Sato sato(20);
+    Student4 *pStudent[2];
+    pStudent[0] = &tanaka;
+    pStudent[1] = &sato;
+
+    int length = sizeof(pStudent) / sizeof(pStudent[0]);
+    for(int i=0; i<length; i++){
+        cout << pStudent[i]->num << "\n";
+    }
+
 
     return 0;
 }

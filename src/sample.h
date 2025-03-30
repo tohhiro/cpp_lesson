@@ -132,8 +132,18 @@ class NewClass2 {
     public:
         void hello(){
             cout << "Hello" << "\n";
-        };
+        }
         void hello(string str){
             cout << "Hello! " << str << "\n";
-        };
+        }
+        virtual void show(){
+            cout << "NewClass2のshow" << "\n";
+        }
+};
+
+class NewClass3 : public NewClass2 {
+    public:
+        void show(){
+            cout << "NewClass3のshow" << "\n";
+        }
 };

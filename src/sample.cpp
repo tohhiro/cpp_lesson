@@ -48,8 +48,10 @@ void twiceFunc(const char* num1);
 int main() {
  
     NewClass2 obj;
-    obj.hello();
-    obj.hello("tohhiro");
+    obj.show();
+    NewClass3 obj2;
+    obj2.show();
+    obj2.NewClass2::show();
 
     return 0;
 }

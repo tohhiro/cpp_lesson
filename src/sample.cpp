@@ -47,17 +47,11 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    Tanaka tanaka(10);
-    Sato sato(20);
-    Student4 *pStudent[2];
-    pStudent[0] = &tanaka;
-    pStudent[1] = &sato;
-
-    int length = sizeof(pStudent) / sizeof(pStudent[0]);
-    for(int i=0; i<length; i++){
-        cout << pStudent[i]->num << "\n";
-    }
-
+    NewClass4 obj1, obj2, result;
+    obj1.num = 10;
+    obj2.num = 20;
+    result = obj1.operator-(obj2);
+    cout << "result+なしの値は" << result.num << "\n";
 
     return 0;
 }

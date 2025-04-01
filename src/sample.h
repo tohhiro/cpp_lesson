@@ -164,3 +164,13 @@ class Sato : public Student4 {
             num = x;
         }
 };
+
+class NewClass4 {
+    public:
+        int num;
+        NewClass4 operator+(NewClass4 obj){
+            NewClass4 result;
+            result.num = num + obj.num;
+            return result;
+        }
+};

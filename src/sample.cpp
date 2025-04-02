@@ -47,11 +47,13 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    NewClass4 obj1, obj2, result;
-    obj1.num = 10;
-    obj2.num = 20;
-    result = obj1.operator-(obj2);
-    cout << "result+なしの値は" << result.num << "\n";
+    int result;
+    NewClass5 obj;
+    obj.num = 10;
+    result = obj.operator+(20);
+    cout << "operatorを使ったresultの値は" << result << "\n";
+    result = obj + 5; // operator+を使う
+    cout << "objをそのまま足したresultの値は" << result << "\n";
 
     return 0;
 }

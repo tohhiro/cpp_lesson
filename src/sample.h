@@ -174,3 +174,12 @@ class NewClass4 {
             return result;
         }
 };
+
+class NewClass5 {
+    public:
+        int num;
+        int operator+(int x){
+            int result = num + x;
+            return result;
+        }
+};

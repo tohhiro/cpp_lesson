@@ -183,3 +183,22 @@ class NewClass5 {
             return result;
         }
 };
+
+class Point {
+    public:
+        int x;
+        int y;
+        Point(int a, int b){
+            x = a;
+            y = b;
+        }
+    //    Point operator+(Point obj){
+    //         Point result(0, 0);
+    //         result.x = x + obj.x;
+    //         result.y = y + obj.y;
+    //         return result;
+    //     }
+    Point operator+(const Point& obj) const {
+        return Point(x + obj.x, y + obj.y);
+    }
+};

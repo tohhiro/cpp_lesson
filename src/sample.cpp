@@ -47,12 +47,9 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    Point p1(10, 20);
-    Point p2(30, 40);
-    Point ans(0, 0);
-    ans = p1.operator+(p2);
-    cout << "p1の座標" << ans.x << "," << ans.y << "\n";
-    cout << "p2の座標" << ans.x << "," << ans.y << "\n";
+    PrefixOperator obj, result;
+    result = ++obj;
+    cout << "PrefixOperatorの値は" << result.num << "\n";
 
 
     return 0;

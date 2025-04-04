@@ -202,3 +202,17 @@ class Point {
         return Point(x + obj.x, y + obj.y);
     }
 };
+
+class PrefixOperator {
+    public:
+        int num;
+        PrefixOperator(){
+            num = 0;
+        }
+        PrefixOperator operator++(){
+            PrefixOperator tmp;
+            num++;
+            tmp.num = num;
+            return tmp;
+        }
+};

@@ -216,3 +216,19 @@ class PrefixOperator {
             return tmp;
         }
 };
+
+class Point2 {
+    public:
+        int x;
+        int y;
+        Point2(int a, int b){
+            x = a;
+            y = b;
+        }
+        bool operator>(Point2 obj){
+            if(x > obj.x && y > obj.y)
+                return true;
+            else
+                return false;
+        }
+};

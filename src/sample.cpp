@@ -47,9 +47,14 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    PrefixOperator obj, result;
-    result = ++obj;
-    cout << "PrefixOperatorの値は" << result.num << "\n";
+    Point2 p1(1, 2);
+    Point2 p2(3, 4);
+
+    if(p2 > p1)
+        cout << "p2の方が大きい" << "\n";
+    else
+        cout << "同じです" << "\n";
+      
 
 
     return 0;

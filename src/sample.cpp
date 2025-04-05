@@ -47,9 +47,9 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    NewClass6 obj;
-    obj.num = 10;
-    show(&obj);
+    NewClass7 obj1(10);
+    NewClass8 obj2(20);
+    calc(&obj1, &obj2);
       
     return 0;
 }

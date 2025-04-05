@@ -44,12 +44,16 @@ void twiceFunc(int num1);
 void twiceFunc(double num1);
 void twiceFunc(const char* num1);
 
+template <class T>
+T twiceFunc2(T num1){
+    return num1 * 2;
+}
+
 
 int main() {
  
-    NewClass7 obj1(10);
-    NewClass8 obj2(20);
-    calc(&obj1, &obj2);
+    cout << twiceFunc2(10) << "\n";
+    cout << twiceFunc2(3.14) << "\n";
       
     return 0;
 }

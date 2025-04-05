@@ -266,4 +266,3 @@ class NewClass8 {
 void calc(NewClass7 *pObj1, NewClass8 *pObj2){
     cout << "num: " << pObj1->num + pObj2->num << "\n";
 }
-

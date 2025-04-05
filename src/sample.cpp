@@ -58,16 +58,14 @@ void comp(T1 x, T2 y){
 }
 
 
-
 int main() {
  
-    int num1;
-    double num2;
-    cout << "はじめの入力してください" << "\n";
-    cin >> num1;
-    cout << "2回目の入力してください" << "\n";
-    cin >> num2;
-    comp(num1, num2);
+    TriangleClass<int> obj1(10, 20);
+    cout << "(int)三角形の面積は" << obj1.calcArea() << "\n";
+
+    TriangleClass<double> obj2(10.5, 20.5);
+    cout << "(double)三角形の面積は" << obj2.calcArea() << "\n";
+ 
     return 0;
 }
 

@@ -266,3 +266,17 @@ class NewClass8 {
 void calc(NewClass7 *pObj1, NewClass8 *pObj2){
     cout << "num: " << pObj1->num + pObj2->num << "\n";
 }
+
+template <class T>
+class TriangleClass {
+    public:
+       T bottom;
+       T height;
+       TriangleClass(T b, T h){
+           bottom = b;
+           height = h;
+       }
+       T calcArea(){
+           return bottom * height / 2;
+       }
+};

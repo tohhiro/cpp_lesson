@@ -49,12 +49,25 @@ T twiceFunc2(T num1){
     return num1 * 2;
 }
 
+template <class T1, class T2>
+void comp(T1 x, T2 y){
+    if(x > y)
+        cout << "はじめの入力が大きいです"  << "\n";
+    else
+        cout << "2番目の入力が大きいです"  << "\n";
+}
+
+
 
 int main() {
  
-    cout << twiceFunc2(10) << "\n";
-    cout << twiceFunc2(3.14) << "\n";
-      
+    int num1;
+    double num2;
+    cout << "はじめの入力してください" << "\n";
+    cin >> num1;
+    cout << "2回目の入力してください" << "\n";
+    cin >> num2;
+    comp(num1, num2);
     return 0;
 }
 

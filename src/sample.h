@@ -232,3 +232,14 @@ class Point2 {
                 return false;
         }
 };
+
+class NewClass6 {
+    public:
+        int num;
+        friend void show(NewClass6 *pObj);
+       
+};
+
+void show(NewClass6 *pObj){
+    cout << "num: " << pObj->num << "\n";
+}

@@ -47,16 +47,10 @@ void twiceFunc(const char* num1);
 
 int main() {
  
-    Point2 p1(1, 2);
-    Point2 p2(3, 4);
-
-    if(p2 > p1)
-        cout << "p2の方が大きい" << "\n";
-    else
-        cout << "同じです" << "\n";
+    NewClass6 obj;
+    obj.num = 10;
+    show(&obj);
       
-
-
     return 0;
 }
 

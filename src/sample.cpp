@@ -44,13 +44,28 @@ void twiceFunc(int num1);
 void twiceFunc(double num1);
 void twiceFunc(const char* num1);
 
+template <class T>
+T twiceFunc2(T num1){
+    return num1 * 2;
+}
+
+template <class T1, class T2>
+void comp(T1 x, T2 y){
+    if(x > y)
+        cout << "はじめの入力が大きいです"  << "\n";
+    else
+        cout << "2番目の入力が大きいです"  << "\n";
+}
+
 
 int main() {
  
-    NewClass7 obj1(10);
-    NewClass8 obj2(20);
-    calc(&obj1, &obj2);
-      
+    TriangleClass<int> obj1(10, 20);
+    cout << "(int)三角形の面積は" << obj1.calcArea() << "\n";
+
+    TriangleClass<double> obj2(10.5, 20.5);
+    cout << "(double)三角形の面積は" << obj2.calcArea() << "\n";
+ 
     return 0;
 }
 

@@ -243,3 +243,27 @@ class NewClass6 {
 void show(NewClass6 *pObj){
     cout << "num: " << pObj->num << "\n";
 }
+
+class NewClass8;
+class NewClass7 {
+    public:
+        int num;
+        NewClass7(int x){
+            num = x;
+        }
+        friend void calc(NewClass7 *pObj1, NewClass8 *pObj2);
+};
+
+class NewClass8 {
+    public:
+        int num;
+        NewClass8(int x){
+            num = x;
+        }
+        friend void calc(NewClass7 *pObj1, NewClass8 *pObj2);
+};
+
+void calc(NewClass7 *pObj1, NewClass8 *pObj2){
+    cout << "num: " << pObj1->num + pObj2->num << "\n";
+}
+

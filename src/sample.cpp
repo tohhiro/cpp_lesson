@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <vector>
+#include <map>
 #include "sample.h"
 using namespace std;
 struct Fruits {
@@ -60,14 +61,31 @@ void comp(T1 x, T2 y){
 
 void vectorFunc();
 void iteratorOfVectorFunc();
+void mapFunc();
 
 
 
 int main() {
 
-    iteratorOfVectorFunc();
+    mapFunc();
 
     return 0;
+}
+
+
+void mapFunc() {
+    map<string, string> obj;
+    obj.insert(make_pair("りんご", "apple"));
+    obj.insert(make_pair("みかん", "orange"));
+    obj.insert(make_pair("バナナ", "banana"));
+    obj.insert(make_pair("ぶどう", "grape"));
+    obj.insert(make_pair("いちご", "strawberry"));
+
+    string word;
+    cout << "英語にしたい日本語を入力してください" << "\n";
+    cin >> word;
+    cout << obj[word] << "\n";
+
 }
 
 void iteratorOfVectorFunc() {

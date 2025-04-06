@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
+#include <vector>
 #include "sample.h"
 using namespace std;
 struct Fruits {
@@ -57,16 +58,33 @@ void comp(T1 x, T2 y){
         cout << "2番目の入力が大きいです"  << "\n";
 }
 
+void vectorFunc();
+
+
 
 int main() {
- 
-    TriangleClass<int> obj1(10, 20);
-    cout << "(int)三角形の面積は" << obj1.calcArea() << "\n";
+    vectorFunc();
 
-    TriangleClass<double> obj2(10.5, 20.5);
-    cout << "(double)三角形の面積は" << obj2.calcArea() << "\n";
- 
     return 0;
+}
+
+
+void vectorFunc() {
+    int i;
+    int num;
+    vector<int> array;
+    cout << "要素数はいくつにしますか？" << "\n";
+    cin >> num;
+    for(i = 0; i < num; i++){
+        int data;
+        cin >> data;
+        array.push_back(data);
+    }
+    cout << "入力された数値はこちらです" << "\n";
+    for(i = 0; i < num; i++){
+        cout << array[i] << ",";
+    }
+    cout << "\n";
 }
 
 void twiceFunc(int num1) {

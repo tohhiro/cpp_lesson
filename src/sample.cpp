@@ -66,11 +66,34 @@ void iteratorOfVectorFunc();
 void mapFunc();
 void queueFunc();
 void stackFunc();
+void sortFunc();
 
 int main() {
 
-    stackFunc();
+    sortFunc();
     return 0;
+}
+
+void sortFunc() {
+    int i;
+    vector<int> array;
+    cout << "数を5つ入力してください" << "\n";
+    for(i = 0; i < 5; i++){
+        int data;
+        cin >> data;
+        array.push_back(data);
+    }
+    cout << "入力された数値はこちらです" << "\n";
+    for(i = 0; i < 5; i++){
+        cout << array[i] << ",";
+    }
+    cout << "\n";
+    cout << "ソート後" << "\n";
+    sort(array.begin(), array.end());
+    for(i = 0; i < 5; i++){
+        cout << array[i] << ",";
+    }
+    cout << "\n";
 }
 
 void stackFunc() {

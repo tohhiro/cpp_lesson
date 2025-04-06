@@ -64,14 +64,14 @@ void comp(T1 x, T2 y){
 int judgeAge(int year) {
     try{
         if (year < 0 || year > 150)
-            throw 1; 
+            throw string("年齢の範囲外です");
         if (year < 20)
-            return 1;
+            return 1000;
         else
-            return 2;
+            return 2000;
 
-    }catch(int e){
-        cout << "エラーが発生しました" << "\n";
+    }catch(string e){
+        cout << e << "\n";
         return 0;
     }
 }
@@ -96,10 +96,8 @@ void yearCheckFunc() {
     cout << "年齢を入力してください" << "\n";
     cin >> year;
     int result = judgeAge(year);
-     if(result == 1)
-        cout << "1000円です" << "\n";
-    if(result == 2)
-        cout << "2000円です" << "\n";
+    if(result != 0)
+        cout << result << "です" << "\n";
 }
 
 void sortFunc() {

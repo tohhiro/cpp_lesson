@@ -61,6 +61,15 @@ void comp(T1 x, T2 y){
         cout << "2番目の入力が大きいです"  << "\n";
 }
 
+int judgeAge(int year) {
+    if (year < 0 || year > 150)
+        return -1; 
+    else if (year < 20)
+        return 1;
+    else
+        return 2;
+}
+
 void vectorFunc();
 void iteratorOfVectorFunc();
 void mapFunc();
@@ -70,7 +79,16 @@ void sortFunc();
 
 int main() {
 
-    sortFunc();
+    int year;
+    cout << "年齢を入力してください" << "\n";
+    cin >> year;
+    int result = judgeAge(year);
+    if(result == -1)
+        cout << "エラーです" << "\n";
+    else if(result == 1)
+        cout << "1000円です" << "\n";
+    else
+        cout << "2000円です" << "\n";
     return 0;
 }
 

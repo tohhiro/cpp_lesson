@@ -59,13 +59,37 @@ void comp(T1 x, T2 y){
 }
 
 void vectorFunc();
+void iteratorOfVectorFunc();
 
 
 
 int main() {
-    vectorFunc();
+
+    iteratorOfVectorFunc();
 
     return 0;
+}
+
+void iteratorOfVectorFunc() {
+    int i;
+    int num;
+    vector<int> array;
+    cout << "要素数はいくつにしますか？" << "\n";
+    cin >> num;
+    for(i = 0; i < num; i++){
+        int data;
+        cin >> data;
+        array.push_back(data);
+    }
+
+    cout << "入力された数値はこちらです" << "\n";
+    vector<int>::iterator it = array.begin();
+    while(it != array.end()){
+        cout << *it << ",";
+        it++;
+    }
+    cout << "\n";
+
 }
 
 

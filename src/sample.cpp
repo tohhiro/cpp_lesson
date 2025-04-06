@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <vector>
 #include <map>
+#include <queue>
 #include "sample.h"
 using namespace std;
 struct Fruits {
@@ -62,14 +63,28 @@ void comp(T1 x, T2 y){
 void vectorFunc();
 void iteratorOfVectorFunc();
 void mapFunc();
+void queueFunc();
 
 
 
 int main() {
 
-    mapFunc();
-
+    queueFunc();
     return 0;
+}
+
+void queueFunc() {
+
+    queue<int> obj;
+    obj.push(11);
+    obj.push(22);
+    obj.push(33);
+    cout << "キューで整列しました" << "\n";
+
+    while(!obj.empty()){
+        cout << obj.front() << "\n";
+        obj.pop();
+    }
 }
 
 

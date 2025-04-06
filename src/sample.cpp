@@ -4,6 +4,7 @@
 #include <vector>
 #include <map>
 #include <queue>
+#include <stack>
 #include "sample.h"
 using namespace std;
 struct Fruits {
@@ -64,17 +65,27 @@ void vectorFunc();
 void iteratorOfVectorFunc();
 void mapFunc();
 void queueFunc();
-
-
+void stackFunc();
 
 int main() {
 
-    queueFunc();
+    stackFunc();
     return 0;
 }
 
-void queueFunc() {
+void stackFunc() {
+    stack<int> obj;
+    obj.push(11);
+    obj.push(22);
+    obj.push(33);
+    cout << "スタックで整列しました" << "\n";
+    while(!obj.empty()){
+        cout << obj.top() << "\n";
+        obj.pop();
+    }
+}
 
+void queueFunc() {
     queue<int> obj;
     obj.push(11);
     obj.push(22);
